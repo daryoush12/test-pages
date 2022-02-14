@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Box</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Example documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            
+                                <a class="dropdown-item" href="tutorial-brand.html">
+                                    Brand identity
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-colors.html">
+                                    Colors
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-icons.html">
+                                    Icons
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-layout-and-grid.html">
+                                    Layout and Grid
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-typography.html">
+                                    Typography
+                                </a>
+                            
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components</h3><ul><li><a href="Box.html">Box</a></li><li><a href="dash-name.html">dash-name</a></li><li><a href="Documented.html">Documented</a></li><li><a href="ProgressBar.html">ProgressBar</a></li></ul></div><div class="category"><h2>API</h2><h3>Classes</h3><ul><li><a href="RESTClient.html">RESTClient</a></li></ul><h3>Events</h3><ul><li><a href="Box.html#event:unexpectedEvent">unexpectedEvent</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Components</p>
+                    <h1>Box</h1>
+                </header>
+                
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+            &ltBox <i>title</i> /&gt
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class='vertical-section'>
+                <div class="members">
+                    <div class="member">
+                        <div class=name>
+                            <span class="tag">Constructor</span>
+                        </div>
+                        
+
+
+    
+    <h4 class="name" id="Box">
+        <a class="href-link" href="#Box">#</a>
+        
+        <span class="code-name">
+            
+                &ltBox <i>title</i> /&gt
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>This component is just a Box with border.
+It serves as an example of how you can incorporate
+components together.</p>
+<p>Component also has slots, methods and events.</p>
+    </div>
+    
+
+
+
+
+
+
+
+    
+        <h5>PropTypes:</h5>
+        
+<div class="table-container">
+  <table class="params table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+        <th class="last">Default</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+          <tr class="deep-level-0">
+            <td class="name"><code>title</code></td>
+            <td>
+              string
+            </td>
+            <td>No</td>
+            <td>This will be in the header</td>
+            <td>"My box"</td>
+          </tr>
+          
+    
+    </tbody>
+  </table>
+</div>
+    
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="components_Box.vue.html" class="button">View Source</a>
+            <span>
+                <a href="components_Box.vue.html">components/Box.vue</a>, <a href="components_Box.vue.html#line31">line 31</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Basic usage just with the default slot</p>
+    
+    
+        
+<div style="margin-bottom: 30px;">
+  <div id='A1g2g853t6ruk9kiwufk'></div>
+  <template id="TA1g2g853t6ruk9kiwufk">
+    <head>
+        <script src="./build/entry.js"></script>
+        <link rel="stylesheet" href="./build/entry.css">
+    </head>
+    <body>
+      <div id="AA1g2g853t6ruk9kiwufk"></div>
+      <script>
+        new Vue({
+          components: vueComponents,
+          render: (d, context) => {
+            return d(VueWrapper, {
+              props: {defaultCode: "<Box>\n  I am inside a slot\n</Box>"}
+            })
+          },
+        }).$mount('#AA1g2g853t6ruk9kiwufk');
+      </script>
+    </body>
+  </template>
+
+  <iframe frameborder="0" id="FA1g2g853t6ruk9kiwufk" style="width: 100%;"></iframe>
+
+  <script>
+    void function() {
+      const iframe = document.getElementById('FA1g2g853t6ruk9kiwufk');
+      const doc = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
+
+      doc.document.open();
+      doc.document.write($("#TA1g2g853t6ruk9kiwufk").html());
+      doc.document.close();
+      iframe.contentWindow.updateHeight = function(height) {
+        $(iframe).height(height + 20)
+      }
+    }()
+  </script>
+</div>
+    
+
+        <p class="code-caption">Using second component inside</p>
+    
+    
+        
+<div style="margin-bottom: 30px;">
+  <div id='Aosmg2x2h3sk9kiwufl'></div>
+  <template id="TAosmg2x2h3sk9kiwufl">
+    <head>
+        <script src="./build/entry.js"></script>
+        <link rel="stylesheet" href="./build/entry.css">
+    </head>
+    <body>
+      <div id="AAosmg2x2h3sk9kiwufl"></div>
+      <script>
+        new Vue({
+          components: vueComponents,
+          render: (d, context) => {
+            return d(VueWrapper, {
+              props: {defaultCode: "<Box>\n  <ProgressBar :spent=\"spent\" :remaining=\"50\"></ProgressBar>\n</Box>"}
+            })
+          },
+        }).$mount('#AAosmg2x2h3sk9kiwufl');
+      </script>
+    </body>
+  </template>
+
+  <iframe frameborder="0" id="FAosmg2x2h3sk9kiwufl" style="width: 100%;"></iframe>
+
+  <script>
+    void function() {
+      const iframe = document.getElementById('FAosmg2x2h3sk9kiwufl');
+      const doc = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
+
+      doc.document.open();
+      doc.document.write($("#TAosmg2x2h3sk9kiwufl").html());
+      doc.document.close();
+      iframe.contentWindow.updateHeight = function(height) {
+        $(iframe).height(height + 20)
+      }
+    }()
+  </script>
+</div>
+    
+
+        <p class="code-caption">Example of passing an entire component in a preview</p>
+    
+    
+        
+<div style="margin-bottom: 30px;">
+  <div id='Aqqjfyb8t93k9kiwufl'></div>
+  <template id="TAqqjfyb8t93k9kiwufl">
+    <head>
+        <script src="./build/entry.js"></script>
+        <link rel="stylesheet" href="./build/entry.css">
+    </head>
+    <body>
+      <div id="AAqqjfyb8t93k9kiwufl"></div>
+      <script>
+        new Vue({
+          components: vueComponents,
+          render: (d, context) => {
+            return d(VueWrapper, {
+              props: {defaultCode: "{\n  template: `<Box>\n    <ProgressBar :spent=\"spent\" :remaining=\"50\"></ProgressBar>\n    <ProgressBar :spent=\"50\" :remaining=\"50\" style=\"margin-top: 20px\"></ProgressBar>\n  </Box>`,\n  data: function() {\n    return {spent: 223};\n  }\n}"}
+            })
+          },
+        }).$mount('#AAqqjfyb8t93k9kiwufl');
+      </script>
+    </body>
+  </template>
+
+  <iframe frameborder="0" id="FAqqjfyb8t93k9kiwufl" style="width: 100%;"></iframe>
+
+  <script>
+    void function() {
+      const iframe = document.getElementById('FAqqjfyb8t93k9kiwufl');
+      const doc = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
+
+      doc.document.open();
+      doc.document.write($("#TAqqjfyb8t93k9kiwufl").html());
+      doc.document.close();
+      iframe.contentWindow.updateHeight = function(height) {
+        $(iframe).height(height + 20)
+      }
+    }()
+  </script>
+</div>
+    
+
+
+
+                    </div>
+                </div>
+            </div>
+        
+    
+    </div>
+    
+          
+            <div class='vertical-section'>
+                <h1>Slots</h1>
+                <div class="members">
+                
+                    <div class="member">
+                        <h4 class="name" id="slot-options">
+                            <a class="href-link" href="#slot-options">#</a>
+                            <span class="code-name">options</span>
+                        </h4>
+                        <div class="description">
+                            <p>Here should go all the top header options</p>
+                        </div>
+                    </div>
+                
+                    <div class="member">
+                        <h4 class="name" id="slot-default">
+                            <a class="href-link" href="#slot-default">#</a>
+                            <span class="code-name">default</span>
+                        </h4>
+                        <div class="description">
+                            <p>Main, central, content of the component</p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Methods</h1>
+            <div class="members">
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".exampleMethod">
+        <a class="href-link" href="#.exampleMethod">#</a>
+        
+            
+                <span class='tag'>static</span>
+            
+        
+        <span class="code-name">
+            
+                exampleMethod<span class="signature">(prop1, prop2)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>Also, you can describe methods for each component
+the same as you would do this in regular @jsdoc
+documented file</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>prop1</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>some example property</p></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>prop2</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+
+  
+
+  <td class="description last"><p>other property</p></td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="components_Box.vue.html" class="button">View Source</a>
+            <span>
+                <a href="components_Box.vue.html">components/Box.vue</a>, <a href="components_Box.vue.html#line51">line 51</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Events</h1>
+            <div class="members">
+            
+                <div class="member">
+                    
+
+
+    
+    <h4 class="name" id="event:unexpectedEvent">
+        <a class="href-link" href="#event:unexpectedEvent">#</a>
+        
+        <span class="code-name">
+            
+                unexpectedEvent
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>This event could be thrown by component in case
+of some kind of unexpected behaviour.</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="components_Box.vue.html" class="button">View Source</a>
+            <span>
+                <a href="components_Box.vue.html">components/Box.vue</a>, <a href="components_Box.vue.html#line55">line 55</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            
+            </div>
+        </div>
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>
